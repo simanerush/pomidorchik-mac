@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U8u-h0-cp8">
+    <device id="mac" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qrL-5N-FRn">
+            <objects>
+                <viewController id="U8u-h0-cp8" customClass="ViewController" customModule="PomidorchikMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oJm-D6-Ytg">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-wh-n83">
+                                <rect key="frame" x="240" y="45" width="320" height="166"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2d-W6-Hdk">
+                                <rect key="frame" x="338" y="227" width="124" height="147"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="115"/>
+                                <state key="normal" title="🍅"/>
+                                <connections>
+                                    <action selector="pomodorroButtonPressed:" destination="U8u-h0-cp8" eventType="touchUpInside" id="dDN-6V-8Re"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YRS-zT-1iu">
+                                <rect key="frame" x="359" y="457" width="82" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crq-4W-sE9">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="51"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-8H-vD5">
+                                        <rect key="frame" x="0.0" y="59" width="82" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.94509803920000002" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.49803921569999998" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YRS-zT-1iu" firstAttribute="top" secondItem="J2d-W6-Hdk" secondAttribute="bottom" constant="83" id="03N-7z-xhc"/>
+                            <constraint firstItem="J2d-W6-Hdk" firstAttribute="centerY" secondItem="oJm-D6-Ytg" secondAttribute="centerY" id="4sL-8p-xkT"/>
+                            <constraint firstItem="XPI-TN-Hcp" firstAttribute="bottom" secondItem="YRS-zT-1iu" secondAttribute="bottom" constant="52" id="AAd-e9-nrH"/>
+                            <constraint firstItem="J2d-W6-Hdk" firstAttribute="top" secondItem="Ume-wh-n83" secondAttribute="bottom" constant="16" id="F3I-9J-APM"/>
+                            <constraint firstItem="YRS-zT-1iu" firstAttribute="leading" secondItem="XPI-TN-Hcp" secondAttribute="leading" constant="359" id="X1T-Fg-qx2"/>
+                            <constraint firstItem="J2d-W6-Hdk" firstAttribute="centerX" secondItem="oJm-D6-Ytg" secondAttribute="centerX" id="XTX-FB-4j1"/>
+                            <constraint firstItem="Ume-wh-n83" firstAttribute="leading" secondItem="XPI-TN-Hcp" secondAttribute="leading" constant="240" id="ZzY-X5-LD5"/>
+                            <constraint firstItem="XPI-TN-Hcp" firstAttribute="trailing" secondItem="Ume-wh-n83" secondAttribute="trailing" constant="240" id="l3t-m6-OsJ"/>
+                            <constraint firstItem="XPI-TN-Hcp" firstAttribute="trailing" secondItem="YRS-zT-1iu" secondAttribute="trailing" constant="359" id="tqw-mS-wMO"/>
+                            <constraint firstItem="Ume-wh-n83" firstAttribute="top" secondItem="XPI-TN-Hcp" secondAttribute="top" constant="45" id="uUW-Y9-thT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XPI-TN-Hcp"/>
+                    </view>
+                    <connections>
+                        <outlet property="breakLabel" destination="crq-4W-sE9" id="yqW-Cz-Vcj"/>
+                        <outlet property="pomodorroButton" destination="J2d-W6-Hdk" id="OLh-gD-0JV"/>
+                        <outlet property="timerLabel" destination="f3V-8H-vD5" id="xnl-w1-QEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="An5-4X-V6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.5" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="2388" height="1668"/>
+    </resources>
+</document>
